@@ -30,8 +30,8 @@ const Navbar = () => {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-1">
-            <a href="#" className="px-4 py-2 text-sm font-medium text-foreground hover:text-crimson transition-colors">Register</a>
-            <a href="#" className="px-4 py-2 text-sm font-medium text-foreground hover:text-crimson transition-colors">Search</a>
+            <a href="/auth" className="px-4 py-2 text-sm font-medium text-foreground hover:text-crimson transition-colors">Register</a>
+            <a href="/search" className="px-4 py-2 text-sm font-medium text-foreground hover:text-crimson transition-colors">Search</a>
             
             <div className="relative" onMouseEnter={() => setBrowseOpen(true)} onMouseLeave={() => setBrowseOpen(false)}>
               <button className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-foreground hover:text-crimson transition-colors">
@@ -64,13 +64,13 @@ const Navbar = () => {
               </AnimatePresence>
             </div>
 
-            <a href="#" className="px-4 py-2 text-sm font-medium text-foreground hover:text-crimson transition-colors">Services</a>
+            <a href="/premium" className="px-4 py-2 text-sm font-medium text-foreground hover:text-crimson transition-colors">Premium</a>
           </div>
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="ghost" className="text-foreground hover:text-crimson">Login</Button>
-            <Button className="bg-gradient-hero text-primary-foreground hover:opacity-90 transition-opacity">Register Free</Button>
+            <a href="/auth"><Button variant="ghost" className="text-foreground hover:text-crimson">Login</Button></a>
+            <a href="/auth"><Button className="bg-gradient-hero text-primary-foreground hover:opacity-90 transition-opacity">Register Free</Button></a>
           </div>
 
           {/* Mobile toggle */}
@@ -89,13 +89,13 @@ const Navbar = () => {
               className="md:hidden overflow-hidden border-t border-border"
             >
               <div className="py-4 space-y-2">
-                <a href="#" className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-muted rounded-md">Register</a>
-                <a href="#" className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-muted rounded-md">Search</a>
-                <a href="#" className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-muted rounded-md">Browse Profiles</a>
-                <a href="#" className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-muted rounded-md">Services</a>
+                <a href="/auth" className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-muted rounded-md">Register</a>
+                <a href="/search" className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-muted rounded-md">Search</a>
+                <a href="/search" className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-muted rounded-md">Browse Profiles</a>
+                <a href="/premium" className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-muted rounded-md">Premium</a>
                 <div className="pt-2 px-4 space-y-2">
-                  <Button variant="outline" className="w-full">Login</Button>
-                  <Button className="w-full bg-gradient-hero text-primary-foreground">Register Free</Button>
+                  <a href="/auth"><Button variant="outline" className="w-full">Login</Button></a>
+                  <a href="/auth"><Button className="w-full bg-gradient-hero text-primary-foreground">Register Free</Button></a>
                 </div>
               </div>
             </motion.div>
