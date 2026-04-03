@@ -69,8 +69,8 @@ const Navbar = () => {
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="ghost" className="text-foreground hover:text-crimson">Login</Button>
-            <Button className="bg-gradient-hero text-primary-foreground hover:opacity-90 transition-opacity">Register Free</Button>
+            <a href="/auth"><Button variant="ghost" className="text-foreground hover:text-crimson">Login</Button></a>
+            <a href="/auth"><Button className="bg-gradient-hero text-primary-foreground hover:opacity-90 transition-opacity">Register Free</Button></a>
           </div>
 
           {/* Mobile toggle */}
