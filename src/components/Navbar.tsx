@@ -30,8 +30,8 @@ const Navbar = () => {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-1">
-            <a href="#" className="px-4 py-2 text-sm font-medium text-foreground hover:text-crimson transition-colors">Register</a>
-            <a href="#" className="px-4 py-2 text-sm font-medium text-foreground hover:text-crimson transition-colors">Search</a>
+            <a href="/auth" className="px-4 py-2 text-sm font-medium text-foreground hover:text-crimson transition-colors">Register</a>
+            <a href="/search" className="px-4 py-2 text-sm font-medium text-foreground hover:text-crimson transition-colors">Search</a>
             
             <div className="relative" onMouseEnter={() => setBrowseOpen(true)} onMouseLeave={() => setBrowseOpen(false)}>
               <button className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-foreground hover:text-crimson transition-colors">
